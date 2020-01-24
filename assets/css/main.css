@@ -165,19 +165,14 @@ input, select, textarea {
 	p {
 		margin: 0 0 2em 0;
         font-family: 'Josefin Slab', serif;
+        font-size: 0.75em;
 	}
 
     h1, h2 {    
         font-family: 'Amatic SC', cursive;
-    }
-
-    h2 {
-/*        font-size: 1em;*/
-    }
+    }    
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #fff;
-		font-weight: 800;
 		letter-spacing: 0.225em;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -197,8 +192,8 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			h2 {
-				font-size: 1.1em;
-				line-height: 1.65em;
+				font-size: 1em;
+				line-height: 1.3em;
 			}
 
 		}
@@ -2431,7 +2426,7 @@ input, select, textarea {
 		box-shadow: inset 0 0 0 2px #fff;
 		cursor: pointer;
 		display: inline-block;
-		font-size: 1em;
+		font-size: .75em;
 /*		font-weight: 600;*/
         font-family: 'Josefin Slab', cursive;        
 		height: 3.125em;
@@ -2793,7 +2788,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.spotlight .content {
-				padding: 3em 2em 1em 2em ;
+				padding: 1em 1em 1em 1em;
 			}
 
 		}
@@ -3325,7 +3320,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.wrapper {
-				padding: 3em 2em 1em 2em ;
+				padding: 2.4em 1em 0em 1em ;
 			}
 
 		}
@@ -3609,7 +3604,7 @@ input, select, textarea {
 			display: inline-block;
 			font-size: 1.75em;
 			opacity: 1;
-			padding: 0.35em 1em;
+			padding: 0.5em 1em;
 			position: relative;
 			z-index: 1;
 		}
@@ -3639,15 +3634,6 @@ input, select, textarea {
 			#banner h2:after {
 				bottom: 0;
 				right: 0;
-			}
-
-		#banner p {
-            
-/*			text-transform: uppercase;*/
-		}
-
-			#banner p a {
-				color: inherit;
 			}
 
 		#banner .more {
@@ -3720,7 +3706,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 4em 1em 4em 1em ;
+				padding: 2.4em 1em 0em 1em ;
 				height: auto;
 				min-height: 0;
 			}
@@ -3730,7 +3716,7 @@ input, select, textarea {
 				}
 
 				#banner br {
-					display: none;
+/*					display: none;*/
 				}
 
 				#banner .more {
@@ -3900,7 +3886,7 @@ input, select, textarea {
 	#footer {
 		padding: 6em 0 4em 0 ;
 		background-color: var(--bg-color-primary);
-        
+        font-family: 'Amatic SC', cursive;
 		text-align: center;
 	}
 
@@ -3917,8 +3903,7 @@ input, select, textarea {
 				}
 
 		#footer .copyright {
-			color: white;
-			font-size: 0.8em;
+			color: white;			
 			letter-spacing: 0.225em;
 			list-style: none;
 			padding: 0;
@@ -3928,7 +3913,8 @@ input, select, textarea {
 			#footer .copyright li {
 /*				border-left: solid 1px rgba(255, 255, 255, 0.5);*/
 				display: inline-block;
-				line-height: 1em;
+                font-size: .6em;
+				line-height: 2em;
 				margin-left: 1em;
 				padding-left: 1em;
 			}
