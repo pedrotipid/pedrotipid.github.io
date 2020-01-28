@@ -2201,7 +2201,9 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		margin-left: -1em;
+        margin-bottom: 0em;
 		padding-left: 0;
+        padding-bottom: 1em;
 	}
 
 		ul.actions li {
@@ -2439,7 +2441,7 @@ input, select, textarea {
 /*		font-weight: 600;*/
         font-family: 'Josefin Slab', cursive;        
 		height: 3.125em;
-		letter-spacing: 0.14em;
+/*		letter-spacing: 0.14em;*/
 		line-height: 3.125em;
 		max-width: 30em;
 		padding: 1em 2em;        
