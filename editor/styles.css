@@ -1,0 +1,56 @@
+html, body {
+    /* ensure that all of the viewport is used */
+    width: 100%;
+    height: 100%;
+    /* ensure that no scrollbars appear */
+    margin: 0;
+    padding: 0;
+    
+    overflow: hidden;
+
+    /* center SVG horizontally and vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+#picture {
+  /* ensure 1:1 aspect ratio, tweak 50 to make SVG larger */
+  width: 200vmin;
+  height: 200vmin;
+  /* set some maximum size (width and height need to match
+   * aspect ratio, 1:1 in this case */
+  max-width: 75%;
+  max-height: 75%;    
+}
+
+button {
+    
+}
+
+/* For textures */
+
+.tipi-body {
+  fill: url(#texture1);
+  stroke: black;
+  stroke-width: 1;
+}
+
+.tipi-arms {
+  fill: url(#texture2);
+  stroke: black;
+  stroke-width: 1;
+}
+
+
+.tipi-ears {
+  fill: url(#texture3);
+  stroke: black;
+  stroke-width: 1;
+}
