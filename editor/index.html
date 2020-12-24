@@ -108,17 +108,17 @@
                 </g>
             </svg>        
                     
-            <div>                
+            <div class="controls">                
                 <button class="button-arrow" id="button-ears-previous">&#60;</button>
                 <text>Ears</text>
                 <button class="button-arrow" id="button-ears-next">&#62;</button>
             </div>
-            <div>                
+            <div class="controls">                
                 <button class="button-arrow" id="button-body-previous">&#60;</button>
                 <text>Body</text>
                 <button class="button-arrow" id="button-body-next">&#62;</button>
             </div>
-            <div>
+            <div class="controls">
                 <button class="button-arrow" id="button-arms-previous">&#60;</button>
                 <text>Arms</text>
                 <button class="button-arrow" id="button-arms-next">&#62;</button>
@@ -126,6 +126,8 @@
             <div>
                 <button id="button-random">Random</button>
                 <button id="button-reset">Reset</button>
+                <button id="button-view">View</button>
+                <button id="button-edit">Edit</button>
             </div>            
         
             <!-- Begin Mailchimp Signup Form -->        
@@ -157,6 +159,22 @@
             var TEXTURE_COUNT = 3;
             
             reset();
+            
+            $(".controls").hide();
+            $("#button-view").hide();
+            $("#button-edit").show();
+            
+            $("#button-edit").on("click", function() {
+                $(".controls").show();
+                $("#button-view").show();
+                $("#button-edit").hide();
+            });
+            
+            $("#button-view").on("click", function() {
+                $(".controls").hide();
+                $("#button-edit").show();
+                $("#button-view").hide();
+            });
             
             $("#button-ears-next").on("click", function() {
                 indexTextureEars = (indexTextureEars < TEXTURE_COUNT) ? ++indexTextureEars : 1; 
