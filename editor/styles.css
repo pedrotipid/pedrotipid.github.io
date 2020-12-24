@@ -57,7 +57,7 @@ div {
     flex-direction: row;
 }
 
-button, text {
+button, text, input {
     font-size: 2em;
     font-family: 'Amatic SC', cursive;
 }
@@ -67,7 +67,7 @@ text {
     margin-right: .25em;
 }
 
-button {
+button, #mc-embedded-subscribe {
     background-color: var(--bg-color-primary);
     color: white;
     border: 0;
@@ -83,7 +83,7 @@ button:active {
 }
 
 .button-arrow {
-    width: 10%;
+    width: 5%;
 } 
 
 /* For textures */
