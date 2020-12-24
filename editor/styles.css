@@ -84,7 +84,11 @@ button:active {
 
 .button-arrow {
     width: 10%;
-} 
+}
+
+#mc_embed_signup {
+    padding: .25em;
+}
 
 /* For textures */
 
