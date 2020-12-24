@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans|Josefin+Slab&display=swap");
+
+:root {
+/*    --bg-color-primary: #9fe1f5;*/
+    --bg-color-primary: #76C7E0;
+    --bg-color-primary-highlight: #4898b0;
+    --bg-color-secondary: white;
+}
+
 html, body {
     /* ensure that all of the viewport is used */
     width: 100%;
@@ -13,6 +22,16 @@ html, body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
+    background-color: beige;
+}
+
+img {
+    width: 2em;
+    height: auto;
+    background-color: var(--bg-color-primary);
+    border-radius: 1em;
+    padding: 1em;
 }
 
 #container {
@@ -27,12 +46,45 @@ html, body {
   /* set some maximum size (width and height need to match
    * aspect ratio, 1:1 in this case */
   max-width: 75%;
-  max-height: 75%;    
+  max-height: 75%;
+}
+
+div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+button, text {
+    font-size: 5em;
+    font-family: 'Amatic SC', cursive;
+}
+
+text {
+    margin-left: .25em;
+    margin-right: .25em;
 }
 
 button {
-    
+    background-color: var(--bg-color-primary);
+    color: white;
+    border: 0;
+    border-radius: .25em;
+    outline: 0;
+    margin: 0 .25em .25em .25em;
+    padding: .25em;
 }
+
+button:active {
+    background-color: var(--bg-color-primary-highlight);
+    outline: 0;
+}
+
+.button-arrow {
+    width: 10%;
+} 
 
 /* For textures */
 

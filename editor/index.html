@@ -7,7 +7,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>        
     </head>
 
-    <body>            
+    <body>
 <!--
         <svg id="picture" viewBox="0 0 128 228" xmlns="http://www.w3.org/2000/svg">
             <rect width="128" height="228" fill="black"/>
@@ -16,7 +16,7 @@
         </svg>
 -->
    
-
+            <text>Make your TIPI!</text>
      
             <svg id="picture" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 187 341">
             <defs id="defs4">
@@ -107,24 +107,25 @@
                 </g>
             </svg>
         
-            <div>
+            <div>                
+                <button class="button-arrow" id="button-ears-previous">&#60;</button>
                 <text>Ears</text>
-                <button id="button-ears-previous">Previous</button>
-                <button id="button-ears-next">Next</button>
+                <button class="button-arrow" id="button-ears-next">&#62;</button>
             </div>
-            <div>
+            <div>                
+                <button class="button-arrow" id="button-body-previous">&#60;</button>
                 <text>Body</text>
-                <button id="button-body-previous">Previous</button>
-                <button id="button-body-next">Next</button>
+                <button class="button-arrow" id="button-body-next">&#62;</button>
             </div>
             <div>
-                <text>Legs</text>
-                <button id="button-arms-previous">Previous</button>
-                <button id="button-arms-next">Next</button>
-            </div>        
-
-            <button id="button-random">Random!</button>
-            <button id="button-reset">Reset</button>
+                <button class="button-arrow" id="button-arms-previous">&#60;</button>
+                <text>Arms</text>
+                <button class="button-arrow" id="button-arms-next">&#62;</button>
+            </div>
+            <div>
+                <button id="button-random">Random</button>
+                <button id="button-reset">Reset</button>
+            </div>            
         
             <!-- Begin Mailchimp Signup Form -->        
             <div id="mc_embed_signup">
